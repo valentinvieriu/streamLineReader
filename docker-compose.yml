@@ -1,0 +1,9 @@
+version: '2'
+services:
+  data-converter:
+    build: .
+    image: valentinvieriu/data-converter-1.0.1
+    environment: 
+      INPUT_FILE: '${INPUT_FILE}'
+    volumes: 
+      - ${ROOT_FOLDER}:/data
